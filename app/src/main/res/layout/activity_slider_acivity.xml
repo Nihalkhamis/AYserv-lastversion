@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SliderAcivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="80dp"
+                android:paddingTop="80dp" />
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:gravity="center"
+                app:selected_color="@color/colorPrimaryDark"
+                app:selected_height="10dp"
+                app:selected_padding_left="3dp"
+                app:selected_padding_right="3dp"
+                app:selected_width="10dp"
+                app:shape="oval"
+                app:unselected_color="#fff"
+                app:unselected_height="8dp"
+                app:unselected_padding_left="3dp"
+                app:unselected_padding_right="3dp"
+                app:unselected_width="8dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/Remove"
+            android:layout_height="40dp"
+            android:src="@drawable/delet"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</LinearLayout>
